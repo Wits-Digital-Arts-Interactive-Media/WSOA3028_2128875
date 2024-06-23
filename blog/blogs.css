@@ -1,0 +1,30 @@
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.blog-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 5px;
+    background-color: rgb(62, 90, 64);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    flex: 1 0 20%; /* Makes each button take up roughly 45% of the container's width */
+}
+
+.blog-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .blog-button {
+        flex: 1 0 100%; /* Full width for small screens */
+    }
+}
